@@ -1,0 +1,360 @@
+body{
+    margin: 10px;
+    background-color: #faf8f1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+/* Header---------------- */
+header {
+    background-color: #faf8f1;
+    margin: 0 auto;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px 0px;
+}
+
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    background-color: #C2D2BC;
+    padding: 5px 15px;
+    border-radius: 20px;
+
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: #5C5C5C;
+}
+
+/* ------------------------- */
+
+
+
+
+
+/* Slider---------------------- */
+#foto {
+    margin: 0 auto;
+    width: 1024px;
+
+}
+
+
+.foto img{
+    width: 1024px;
+    
+}
+
+
+/* ------------------------------ */
+
+
+
+
+
+
+
+/* Seção Um ------------------------ */
+.titulo-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-1 spam{
+ color: #7E9E79;
+}
+
+.um {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 984px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+.filho1{
+    border-left: 1px solid #83a27d;
+    text-align: center;
+    padding: 10px;
+}
+
+.filho1 h3{
+    color: #545E53;
+}
+
+.filho1 p{
+    color: #5C5C5C;
+}
+
+.filho{
+   
+    text-align: center;
+    padding: 10px;
+}
+
+
+.filho h3{
+    color: #545E53;
+}
+
+.filho p{
+    color: #5C5C5C;
+}
+/* ----------------------------------- */
+
+
+
+
+
+
+
+
+/* Seção Dois ------------------------- */
+.dois{
+    background-color: #C6D9C3;
+    margin: 0 auto;
+    width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
+
+.filho2{
+    height: 400px;
+    padding: 30px 40px 0px 60px; 
+}
+
+
+
+.filho2 p{
+    font-size: 24px;
+}
+
+.filho2 a{
+    background-color: #E7F1E5;
+    border-radius: 36px;
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    
+}
+
+/* Seção Tres --------------------------- */
+.tres{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tres h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-avaliacao{
+    width: 300px;
+    background: #fff;
+    border-radius: 35px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.estrelas{
+    color: #f4b400;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.depoimento{
+    font-size: 18px;
+    color: #222;
+}
+
+.autor{
+    font-size: 16px;
+    color: #222;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+/* Media Query */
+
+
+@media (max-width:768px){
+
+  .dois{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+
+
+
+/* ------------------------------------- */
+
+
+
+
+
+
+/* Footer------------------------------- */
+
+.footer {
+    background: #f5f5f2;
+    padding: 60px;
+    color: #555;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center ;
+}
+
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.footer2{
+ width: 400px;
+}
+
+.footer3{
+width: 200px;
+}
+
+.footer3 ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer3 a{
+    text-decoration: none;
+    color: #555;
+}
+
+.descricao span{
+    color: #7E9E79;
+}
+
+.newsletter{
+    border-left: 1px solid #83a27d;
+    padding-left: 50px;
+}
+
+.novidades input, button{
+    border: 1px solid #0c9217;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px #545E53;
+    color: #87be8b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu hamburguer ---------------------------------------------------------------------- */
+.menu-container {
+    display: none;
+  }
+  
+  @media (max-width:690px){
+  
+  /* para esconder o meu menu tradicional-----------------------------------------------------*/
+  /* Esconde a navegação padrão do cabeçalho */
+  .header nav {
+    display: none;
+  }
+  
+  /* Container principal do menu hamburguer */
+  .menu-container {
+    display: block; /* Garante que o container seja exibido como bloco */
+    position: relative; /* Permite posicionar o menu dropdown em relação a este container */
+  }
+  
+  /* Estilização do botão hamburguer */
+  .hamburger {
+    width: 30px; /* Largura total do botão */
+    height: 25px; /* Altura total do botão */
+    display: flex; /* Usa flexbox para organizar os spans */
+    flex-direction: column; /* Organiza os spans verticalmente */
+    justify-content: space-between; /* Espaça os spans igualmente */
+    font-size: 30px; /* Tamanho da fonte (não afeta os spans diretamente) */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 20px; /* Espaçamento interno para aumentar a área clicável */
+  }
+  
+  /* Cada linha do ícone hamburguer (geralmente 3 linhas horizontais) */
+  .hamburger span {
+    display: block; /* Faz com que cada span ocupe uma linha */
+    height: 4px; /* Altura da linha */
+    background-color: #b69f38; /* Cor dourada */
+    border-radius: 2px; /* Bordas arredondadas para suavizar o visual */
+  }
+  
+  /* Estilização do menu que aparece ao clicar no hamburguer */
+  .menu {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 20px; /* Espaçamento interno */
+    margin: 0; /* Remove margens padrão */
+    display: none; /* Esconde o menu por padrão */
+    background-color: #f8f8f8; /* Cor de fundo clara */
+    position: absolute; /* Posiciona o menu em relação ao container */
+    top: 50px; /* Distância do topo do container */
+    left: 0; /* Alinha à esquerda */
+    width: 200px; /* Largura fixa do menu */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+  }
+  
+  /* Cada item da lista do menu */
+  .menu li {
+    border-bottom: 1px solid #ddd; /* Linha divisória entre os itens */
+  }
+  
+  /* Links dentro dos itens do menu */
+  .menu li a {
+    display: block; /* Ocupa toda a largura do item */
+    padding: 10px; /* Espaçamento interno para facilitar o clique */
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #5b3c3c; /* Cor do texto (marrom escuro) */
+  }
+  
+  /* Efeito ao passar o mouse sobre os links */
+  .menu li a:hover {
+    background-color: #eee; /* Cor de fundo mais clara ao passar o mouse */
+  }
+  
+  
+  
+  }
