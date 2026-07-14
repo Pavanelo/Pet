@@ -1,0 +1,444 @@
+/*==========================
+        GERAL
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+    background:#FAF8F1;
+    color:#555;
+}
+
+/*==========================
+        HEADER
+==========================*/
+
+header{
+    width:1024px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:170px;
+}
+
+.menu ul{
+    display:flex;
+    gap:45px;
+    list-style:none;
+    background:#C2D2BC;
+    padding:8px 20px;
+    border-radius:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#5C5C5C;
+    font-size:15px;
+}
+
+/*==========================
+        CONTAINER
+==========================*/
+
+.login{
+    width:1024px;
+    margin:50px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/*==========================
+        CARD
+==========================*/
+
+.card{
+    width:430px;
+    background:#fff;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+/*==========================
+        PASSOS
+==========================*/
+
+.steps{
+    display:flex;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.step{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.line{
+    width:70px;
+    height:2px;
+    background:#C8C8C8;
+    margin:0 15px;
+}
+
+.circle{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:3px solid #87A47F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    background:#fff;
+}
+
+.circle.inactive{
+    background:#C2D2BC;
+    border:none;
+    color:#fff;
+}
+
+.step span{
+    font-size:13px;
+    color:#666;
+}
+
+/*==========================
+        TITULOS
+==========================*/
+
+.card h1{
+    font-size:42px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+/*==========================
+        FORM
+==========================*/
+
+.card form{
+    display:flex;
+    flex-direction:column;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"]{
+
+    width:100%;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:#F2F2F2;
+    padding:0 15px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:5px 0 20px;
+}
+
+.checkbox input{
+    width:17px;
+    height:17px;
+    margin-top:2px;
+}
+
+.checkbox label{
+    font-size:13px;
+    line-height:18px;
+}
+
+.checkbox a{
+    color:#87A47F;
+    text-decoration:none;
+}
+
+/*==========================
+        BOTÃO
+==========================*/
+
+.card button{
+    width:100%;
+    height:45px;
+    background:#87A47F;
+    color:#fff;
+    border:none;
+    border-radius:25px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#76926f;
+}
+
+/*==========================
+        IMAGEM
+==========================*/
+
+.imagem{
+    width:500px;
+    display:flex;
+    justify-content:center;
+}
+
+.imagem img{
+    width:100%;
+    display:block;
+}
+ 
+ /*==========================
+        FOOTER
+==========================*/
+
+.footer{
+    background:#F5F5F2;
+    margin-top:70px;
+    padding:60px 0;
+    display:flex;
+    justify-content:center;
+}
+
+.footer-links{
+    width:1024px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.footer2{
+    width:300px;
+}
+
+.footer2 img{
+    width:170px;
+    margin-bottom:20px;
+}
+
+.footer2 p{
+    margin-bottom:8px;
+    font-size:14px;
+    color:#555;
+    line-height:22px;
+}
+
+.descricao{
+    margin-bottom:20px;
+}
+
+.descricao span{
+    color:#7E9E79;
+}
+
+.redes{
+    display:flex;
+    gap:12px;
+    margin:20px 0;
+}
+
+.redes a{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#87A47F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+}
+
+/*==========================
+    COLUNAS
+==========================*/
+
+.footer3{
+    width:170px;
+}
+
+.footer3 h3{
+    color:#444;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.footer3 ul{
+    list-style:none;
+}
+
+.footer3 li{
+    margin-bottom:10px;
+    color:#666;
+    cursor:pointer;
+}
+
+.footer3 li:hover{
+    color:#87A47F;
+}
+
+/*==========================
+    NEWSLETTER
+==========================*/
+
+.newsletter{
+    width:280px;
+    border-left:1px solid #83A27D;
+    padding-left:35px;
+}
+
+.newsletter h3{
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    font-size:14px;
+    line-height:22px;
+    margin-bottom:18px;
+}
+
+.novidades{
+    display:flex;
+    align-items:center;
+}
+
+.novidades input{
+    flex:1;
+    height:40px;
+    border:1px solid #83A27D;
+    border-right:none;
+    border-radius:8px 0 0 8px;
+    padding:0 12px;
+    outline:none;
+    background:#fff;
+}
+
+/* BOTÃO DA SETA */
+
+.novidades button{
+    width:42px;
+    height:40px;
+    border:1px solid #83A27D;
+    border-radius:0 8px 8px 0;
+    background:#87A47F;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.novidades button:hover{
+    background:#76926f;
+}
+
+/*==========================
+    RESPONSIVO
+==========================*/
+
+@media (max-width:1024px){
+
+header,
+.login,
+.footer-links{
+    width:95%;
+}
+
+.login{
+    flex-direction:column;
+    gap:50px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+}
+
+.imagem{
+    width:100%;
+}
+
+.imagem img{
+    width:80%;
+}
+
+.footer-links{
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.newsletter{
+    width:100%;
+    border-left:none;
+    padding-left:0;
+    border-top:1px solid #83A27D;
+    padding-top:30px;
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.menu ul{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    padding:30px;
+}
+
+.card h1{
+    font-size:34px;
+}
+
+.steps{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.line{
+    display:none;
+}
+
+.footer-links{
+    flex-direction:column;
+}
+
+.footer2,
+.footer3,
+.newsletter{
+    width:100%;
+}
+
+}
+ 
