@@ -1,0 +1,440 @@
+/*==========================
+RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FAF8F1;
+    font-family:'Inter',sans-serif;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+    width:1024px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:45px;
+}
+
+.menu ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    background:#C6D9C3;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+.menu ul li a{
+    color:#555;
+    font-weight:600;
+}
+
+/*==========================
+PERFIL
+==========================*/
+
+.perfil{
+    width:1024px;
+    margin:30px auto;
+}
+
+.voltar{
+    color:#6E8E68;
+    font-weight:600;
+}
+
+.perfil h1{
+    font-size:50px;
+    margin:20px 0 35px;
+    color:#222;
+}
+
+/*==========================
+TOPO
+==========================*/
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    margin-bottom:35px;
+}
+
+.card-pet{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:#FFF;
+    padding:30px;
+    border-radius:35px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.foto{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#ccc;
+}
+
+.foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.dados h2{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.dados p{
+    color:#666;
+    margin-bottom:5px;
+}
+
+.peso{
+    display:inline-block;
+    background:#C6D9C3;
+    padding:8px 18px;
+    border-radius:20px;
+    margin-top:12px;
+    font-weight:600;
+}
+
+/*==========================
+VACINA
+==========================*/
+
+.vacina{
+    width:260px;
+    background:#FFF;
+    border-radius:35px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.vacina h3{
+    color:#7E9E79;
+    margin-bottom:15px;
+}
+
+.vacina h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.vacina p{
+    margin-bottom:20px;
+}
+
+.vacina button{
+    background:#C6D9C3;
+    border:none;
+    border-radius:25px;
+    padding:12px 25px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/*==========================
+INFORMAÇÕES
+==========================*/
+
+.informacoes{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.info{
+    background:#FFF;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.info h4{
+    color:#7E9E79;
+    margin-bottom:10px;
+}
+
+.info p{
+    margin-bottom:5px;
+}
+
+.info small{
+    color:#777;
+}
+
+/*==========================
+HISTÓRICO
+==========================*/
+
+.historico{
+    background:#fff;
+    border-radius:35px;
+    padding:35px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.historico h2{
+    font-size:30px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.item{
+    display:grid;
+    grid-template-columns:30px 1fr 140px;
+    align-items:center;
+    gap:20px;
+    padding:22px 0;
+    border-bottom:1px solid #ECECEC;
+}
+
+.item:last-child{
+    border-bottom:none;
+}
+
+.circulo{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#D9E9D1;
+    border:4px solid #98B38E;
+}
+
+.texto strong{
+    display:block;
+    margin-bottom:5px;
+    color:#444;
+}
+
+.texto p{
+    font-weight:600;
+    margin-bottom:4px;
+}
+
+.texto small{
+    color:#777;
+}
+
+.item button{
+    background:#C6D9C3;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    color:#4F5E4B;
+    font-weight:600;
+    transition:.3s;
+}
+
+.item button:hover{
+    background:#AAC4A4;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer{
+    margin-top:70px;
+    background:#F5F5F2;
+    padding:60px 0;
+}
+
+.footer-links{
+    width:1024px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.footer2{
+    width:320px;
+}
+
+.footer2 img{
+    margin-bottom:20px;
+}
+
+.descricao{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.descricao span{
+    color:#7E9E79;
+    font-weight:600;
+}
+
+.footer3 h3,
+.newsletter h3{
+    margin-bottom:15px;
+    color:#4F5E4B;
+}
+
+.footer3 ul{
+    list-style:none;
+}
+
+.footer3 ul li{
+    margin-bottom:10px;
+}
+
+.footer3 ul li a{
+    color:#555;
+}
+
+.newsletter{
+    width:260px;
+    border-left:1px solid #B9C8B2;
+    padding-left:30px;
+}
+
+.newsletter p{
+    margin-bottom:15px;
+    color:#666;
+    line-height:1.5;
+}
+
+.novidades{
+    display:flex;
+    gap:10px;
+}
+
+.novidades input{
+    flex:1;
+    padding:10px;
+    border:1px solid #8BA484;
+    border-radius:8px;
+    outline:none;
+}
+
+.novidades button{
+    width:45px;
+    border:none;
+    background:#7E9E79;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.novidades button:hover{
+    background:#6C8C67;
+}
+
+/*==========================
+BOTÕES
+==========================*/
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+/*==========================
+RESPONSIVO
+==========================*/
+
+@media(max-width:1024px){
+
+header,
+.perfil,
+.footer-links{
+    width:95%;
+}
+
+.topo{
+    flex-direction:column;
+}
+
+.card-pet,
+.vacina{
+    width:100%;
+}
+
+.informacoes{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-links{
+    flex-wrap:wrap;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.menu ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card-pet{
+    flex-direction:column;
+    text-align:center;
+}
+
+.informacoes{
+    grid-template-columns:1fr;
+}
+
+.item{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.circulo{
+    margin:auto;
+}
+
+.newsletter{
+    border:none;
+    padding-left:0;
+    width:100%;
+}
+
+.novidades{
+    flex-direction:column;
+}
+
+.novidades button{
+    width:100%;
+}
+
+}
