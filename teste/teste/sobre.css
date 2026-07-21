@@ -1,0 +1,662 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#F8F7F2;
+    color:#4F5E4B;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+header {
+    background-color: #faf8f1;
+    margin: 0 auto;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px 0px;
+}
+
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    background-color: #C2D2BC;
+    padding: 5px 15px;
+    border-radius: 20px;
+
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: #5C5C5C;
+}
+
+
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    padding:20px 0;
+    background:#F8F7F2;
+
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo h2{
+
+    color:#6F8E68;
+    font-size:30px;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#5E6E57;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#8CB36D;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero-content{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.tag{
+
+    display:inline-block;
+    background:#DDE9D8;
+    color:#5D7657;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+    line-height:1.15;
+    margin-bottom:20px;
+    color:#62775D;
+
+}
+
+.hero p{
+
+    color:#666;
+    line-height:1.7;
+    max-width:470px;
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.btn{
+
+    padding:15px 28px;
+    border-radius:12px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+.verde{
+
+    background:#79996F;
+    color:white;
+
+}
+
+.verde:hover{
+
+    background:#67865E;
+
+}
+
+.branco{
+
+    border:2px solid #79996F;
+    color:#79996F;
+
+}
+
+.branco:hover{
+
+    background:#79996F;
+    color:white;
+
+}
+
+/* ===========================
+   BENEFÍCIOS
+=========================== */
+
+.beneficios{
+
+    padding:70px 0;
+
+}
+
+.cards{
+
+    display:flex;
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    flex:1;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icone{
+
+    width:70px;
+    height:70px;
+    background:#E6EFDF;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+
+.icone i{
+
+    font-size:28px;
+    color:#6E8B66;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+    line-height:1.7;
+
+}
+
+/* ===========================
+   PARCEIROS
+=========================== */
+
+.parceiros{
+
+    padding:20px 0 60px;
+
+}
+
+.parceiros-box{
+
+    background:white;
+    border-radius:22px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+
+}
+
+.parceiros h4{
+
+    text-align:center;
+    margin-bottom:25px;
+    color:#63795E;
+
+}
+
+.logos{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+
+}
+
+.logos img{
+
+    max-height:45px;
+    filter:grayscale(100%);
+    opacity:.8;
+
+}
+
+/*==============================
+    NOSSA MISSÃO
+==============================*/
+
+.missao{
+    padding:80px 0;
+}
+
+.missao-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.missao-texto{
+    flex:1;
+}
+
+.missao-imagem{
+    flex:1;
+}
+
+.missao h2{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#60755C;
+}
+
+.missao p{
+    color:#666;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/*==============================
+    DIFERENCIAIS
+==============================*/
+
+.diferenciais{
+    padding:80px 0;
+}
+
+.diferenciais h2{
+    text-align:center;
+    font-size:40px;
+    color:#60755C;
+    margin-bottom:50px;
+}
+
+.cards-diferenciais{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.item{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-8px);
+}
+
+.item i{
+    font-size:45px;
+    color:#7C9A73;
+    margin-bottom:20px;
+}
+
+.item h4{
+    margin-bottom:12px;
+    color:#60755C;
+}
+
+.item p{
+    color:#777;
+    line-height:1.6;
+}
+
+/*==============================
+    COMO FUNCIONA
+==============================*/
+
+.funciona{
+    padding:90px 0;
+    background:#EEF5EA;
+}
+
+.funciona h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:40px;
+    color:#60755C;
+}
+
+.passos{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.passo{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.numero{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#7B9A73;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    position:absolute;
+    top:-18px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.passo i{
+    font-size:42px;
+    color:#7B9A73;
+    margin:20px 0;
+}
+
+.passo h3{
+    margin-bottom:15px;
+    color:#60755C;
+}
+
+.passo p{
+    color:#666;
+    line-height:1.7;
+}
+
+/*==============================
+    CONTATO
+==============================*/
+
+.contato{
+    padding:90px 0;
+}
+
+.contato-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.info h2{
+    font-size:40px;
+    color:#60755C;
+    margin:15px 0;
+}
+
+.info>p{
+    color:#666;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.box-info{
+    display:flex;
+    gap:20px;
+    margin-bottom:25px;
+    align-items:flex-start;
+}
+
+.box-info i{
+    font-size:25px;
+    color:#7B9A73;
+}
+
+.box-info strong{
+    color:#60755C;
+}
+
+.box-info p{
+    color:#666;
+}
+
+/*==============================
+    FORMULÁRIO
+==============================*/
+
+.formulario{
+    background:#fff;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.formulario h2{
+    color:#60755C;
+    margin-bottom:10px;
+}
+
+.formulario p{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.formulario form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-family:Poppins,sans-serif;
+    font-size:15px;
+}
+
+.formulario textarea{
+    resize:none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus{
+    border-color:#7B9A73;
+}
+
+.formulario button{
+    background:#7B9A73;
+    color:#fff;
+    border:none;
+    padding:16px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.formulario button:hover{
+    background:#69875F;
+}
+
+/*==============================
+    RESPONSIVO
+==============================*/
+
+@media(max-width:992px){
+
+.hero-content,
+.missao-box,
+.contato-grid{
+    flex-direction:column;
+    display:flex;
+}
+
+.cards{
+    flex-direction:column;
+}
+
+.cards-diferenciais{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.passos{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.cards-diferenciais,
+.passos{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.missao h2,
+.funciona h2,
+.info h2,
+.diferenciais h2{
+    font-size:32px;
+}
+
+.formulario{
+    padding:25px;
+}
+
+}
