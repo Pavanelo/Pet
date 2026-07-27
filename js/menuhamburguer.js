@@ -7,3 +7,4 @@ if(menu.style.display === "block"){
 }
 else{menu.style.display = "block"}
 }
+
