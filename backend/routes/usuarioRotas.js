@@ -5,6 +5,7 @@ const usuarioController = require("../models/usuarioController");
 router.get("/", usuarioController.listar);
 router.get("/:id", usuarioController.buscarPorId);
 router.post("/", usuarioController.cadastrar);
+router.post("/login", usuarioController.login);
 router.put("/:id", usuarioController.atualizar);
 router.delete("/:id", usuarioController.excluir);
 

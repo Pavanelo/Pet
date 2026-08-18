@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="application-name" content="PetPet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +21,7 @@
 
 <body>
     <!-- Chamada para Menu hamburguer -->
-    <script src="../../js/menuhamburguer.js"></script>
+    <script src="../js/menu.js"></script>
 
 
     <!-- Menu hamburguer ---------------------------------------------------------------->
@@ -49,15 +51,15 @@
     <!-- Header----------------------------- -->
     <header>
         <div class="logo">
-            <img src="../img/Frame 13.png" alt="">
+            <img src="../assets/img/Frame 13.png" alt="">
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Dicas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#produtos">Serviços</a></li>
+                <li><a href="cadastro.html">Dicas</a></li>
+                <li><a href="loja.html">Loja</a></li>
+            <li><a id="linkContaInicio" href="login.html">Entrar</a></li></ul>
         </nav>
     </header>
     <!-- ------------------------------------- -->
@@ -67,7 +69,7 @@
     <!-- slider --------------------------------->
     <div id="foto">
         <div class="foto">
-            <img src="../img/slider1.png" alt="">
+            <img src="../assets/img/slider1.png" alt="">
         </div>
     </div>
     <!-- ------------------------------------ -->
@@ -83,34 +85,34 @@
 
 
         <div class="titulo-1">
-            <h2>Tudo o que você precisa <br>para <spam>cuidar bem</spam> do seu pet!</h2>
+            <h2>Tudo o que você precisa <br>para <span>cuidar bem</span> do seu pet!</h2>
         </div>
 
 
         <!-- Seção Um -------------------------->
         <section class="um">
             <div class="filho">
-                <img src="../img/Frame 1.png" alt="">
+                <img src="../assets/img/Frame 1.png" alt="">
                 <h3>Vacinas</h3>
                 <p>Controle todas as vacinas do seu pet</p>
             </div>
             <div class="filho1">
-                <img src="../img/Frame 2.png" alt="">
+                <img src="../assets/img/Frame 2.png" alt="">
                 <h3>Segurança</h3>
                 <p>Agende consultas, banhos,tosas e outros compromissos</p>
             </div>
             <div class="filho1">
-                <img src="../img/Frame 3.png" alt="">
+                <img src="../assets/img/Frame 3.png" alt="">
                 <h3>Lembretes</h3>
                 <p>Nunca mais esqueça uma vacina ou medicamento</p>
             </div>
             <div class="filho1">
-                <img src="../img/Frame 4.png" alt="">
+                <img src="../assets/img/Frame 4.png" alt="">
                 <h3>Histórico</h3>
                 <p>Acompanhe o histórico de saúde do seu pet com facilidade</p>
             </div>
             <div class="filho1">
-                <img src="../img/Frame 5.png" alt="">
+                <img src="../assets/img/Frame 5.png" alt="">
                 <h3>Autonomia</h3>
                 <p>Seus dados protegidos com segurança e privacidade</p>
             </div>
@@ -127,11 +129,11 @@
                 <h1>Você cuida com amor, <br>a gente ajuda com organização</h1>
                 <p>Mais tempo juntos e menos preocupações no dia a dia </p>
 
-                <a href="#">Criar conta</a>
+                <a href="cadastro.html">Criar conta</a>
 
             </div>
             <div class="filho2">
-                <img src="../img/Frame 6.png" alt="">
+                <img src="../assets/img/Frame 6.png" alt="">
 
             </div>
         </section>
@@ -194,7 +196,7 @@
      <!-- Coluna 1 -->
             <div class="footer2">
                 <div class="logo">
-                    <img src="../img/Frame 13.png" alt="">
+                    <img src="../assets/img/Frame 13.png" alt="">
                 </div>
 
                 <p class="descricao">
@@ -262,6 +264,7 @@
     <!-- ----------------------------------- -->
        
 
+<script>const uInicio=JSON.parse(localStorage.getItem("petpet_usuario")||sessionStorage.getItem("petpet_usuario")||"null");if(uInicio){const a=document.getElementById("linkContaInicio");if(a){a.href="conta.html";a.textContent=(uInicio.nome||"Minha conta").split(" ")[0];}}</script>
 </body>
 
 </html>

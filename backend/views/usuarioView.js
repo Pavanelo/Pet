@@ -1,31 +1,15 @@
-function sucesso(res, dados, mensagem, status) {
-    const codigo = status || 200;
-
-    res.status(codigo).json({
-        mensagem: mensagem,
-        dados: dados
-    });
+function sucesso(res, dados, mensagem, status = 200) {
+    return res.status(status).json({ mensagem, dados });
 }
 
-function erroServidor(res, mensagem, status, erro) {
-    const codigo = status || 500;
-
-    res.status(codigo).json({
-        mensagem: mensagem,
-        erro: erro
-    });
+function erroServidor(res, mensagem, status = 500, erro = undefined) {
+    const resposta = { mensagem };
+    if (process.env.NODE_ENV !== "production" && erro) resposta.erro = erro;
+    return res.status(status).json(resposta);
 }
 
-function erroUsuario(res, mensagem, status) {
-    const codigo = status || 400;
-
-    res.status(codigo).json({
-        mensagem: mensagem
-    });
+function erroUsuario(res, mensagem, status = 400) {
+    return res.status(status).json({ mensagem });
 }
 
-module.exports = {
-    sucesso: sucesso,
-    erroServidor: erroServidor,
-    erroUsuario: erroUsuario
-};
+module.exports = { sucesso, erroServidor, erroUsuario };
