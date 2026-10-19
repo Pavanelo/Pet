@@ -231,12 +231,29 @@ async function carregarHistoricoPerfil() {
     }
 
     lista.innerHTML = itens.map(item => `
-      <article class="timeline-item">
-        <h3>${item.tipo || "Registro de saúde"}</h3>
-        <p>${item.descricao || item.observacoes || "Sem descrição."}</p>
-        <small>${item.data || item.data_registro || ""}</small>
-      </article>
-    `).join("");
+  <article class="history-item">
+    <span class="history-dot"></span>
+
+    <span class="history-date">
+      ${item.data_evento
+        ? new Date(item.data_evento + "T12:00:00").toLocaleDateString("pt-BR")
+        : ""}
+    </span>
+
+    <div>
+      <h3>${item.titulo || item.tipo || "Registro de saúde"}</h3>
+      <p>
+        ${[
+          item.profissional,
+          item.local,
+          item.observacoes
+        ].filter(Boolean).join(" • ") || "Sem observações."}
+      </p>
+    </div>
+
+    <span class="type-pill">${item.tipo || "Outro"}</span>
+  </article>
+`).join("");
 
   } catch (erro) {
     console.error("Erro ao carregar histórico:", erro);

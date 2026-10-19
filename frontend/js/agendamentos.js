@@ -1,8 +1,19 @@
-
 let pets = [], agendamentos = [], mesAtual = new Date();
 
 const fmtMonth = d => d.toLocaleDateString("pt-BR", {month:"long", year:"numeric"})
   .replace(/^./, x => x.toUpperCase());
+
+  function classeTipo(tipo) {
+  const t = (tipo || "").toLowerCase();
+
+  if (t.includes("vacina")) return "evento-vacina";
+  if (t.includes("medicamento")) return "evento-medicamento";
+  if (t.includes("exame")) return "evento-exame";
+  if (t.includes("banho")) return "evento-banho";
+  if (t.includes("consulta")) return "evento-consulta";
+
+  return "evento-outro";
+}
 
 async function carregar() {
   try {
@@ -44,14 +55,31 @@ function render() {
   }
 
   for (let d = 1; d <= days; d++) {
-    const has = agendamentos.some(a => {
-      const x = new Date(a.data_hora);
-      return x.getFullYear() === y && x.getMonth() === m && x.getDate() === d;
-    });
-    const today = new Date();
-    const isToday = today.getFullYear() === y && today.getMonth() === m && today.getDate() === d;
-    grid.innerHTML += `<button class="day ${has ? "has-event" : ""} ${isToday ? "today" : ""}" data-day="${d}">${d}</button>`;
-  }
+    const eventosDoDia = agendamentos.filter(a => {
+  const x = new Date(a.data_hora);
+
+  return x.getFullYear() === y &&
+    x.getMonth() === m &&
+    x.getDate() === d;
+});
+
+const classesEventos = [
+  ...new Set(eventosDoDia.map(a => classeTipo(a.tipo)))
+];
+
+const today = new Date();
+const isToday =
+  today.getFullYear() === y &&
+  today.getMonth() === m &&
+  today.getDate() === d;
+
+grid.innerHTML += `
+  <button
+    class="day ${classesEventos.join(" ")} ${isToday ? "today" : ""}"
+    data-day="${d}"
+    title="${eventosDoDia.map(a => a.titulo).join(", ")}"
+  >${d}</button>
+`;}
 
   const list = agendamentos
     .filter(a => new Date(a.data_hora) >= new Date())

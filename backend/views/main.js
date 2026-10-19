@@ -118,6 +118,7 @@ async function prepararBanco() {
         sexo: 'VARCHAR(20) NULL',
         data_nascimento: 'DATE NULL',
         peso: 'DECIMAL(6,2) NULL',
+        foto: "LONGTEXT NULL",
         cor: 'VARCHAR(80) NULL',
         castrado: 'TINYINT(1) NOT NULL DEFAULT 0',
         microchip: 'VARCHAR(80) NULL',
